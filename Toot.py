@@ -18,5 +18,5 @@ async def post_video(mje,media):
     await asyncio.sleep(5) # espera 10 segundos antes de publicar
     await masto.status_post(status=f'{mje}', media_ids=[media_id], sensitive=False, visibility='public')
 
-asyncio.run(post_video())
+asyncio.run(post_video('¡Gracias a Dios es Viernes!', 'video/viernes/graciasADiosEsViernes.mp4'))
 # asdas
