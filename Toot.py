@@ -19,3 +19,4 @@ async def post_video(mje,media):
     await masto.status_post(status=f'{mje}', media_ids=[media_id], sensitive=False, visibility='public')
 
 asyncio.run(post_video())
+# asdas
