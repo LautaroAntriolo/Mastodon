@@ -37,5 +37,4 @@ def imagen(mje,media,*args, Sensitive=False, formato='png',visibilidad='public')
     for arg in args:
         numerales += f'#{arg} '
     
-    asyncio.run(post_imagen(f'''{mje}
-{numerales}''', f'{media}'))
+    asyncio.run(post_imagen(f'''{numerales}''', f'{media}'))
