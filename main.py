@@ -44,10 +44,6 @@ animalesYAcciones = {
 }
 lugares = ["madriguera", "nido gigante", "cueva en la montaña", "madriguera subterránea", "gran colonia", "hogar de árbol", "agujero en el suelo", "madriguera de hielo", "escondite de rocas", "hamaca de madera"]
 
-
-
-
-
 if __name__=="__main__":
     from datetime import datetime
     import Toot
@@ -62,7 +58,6 @@ if __name__=="__main__":
     mjeDelPrompt =f'Una imagen como si estuviera pintada con acuarelas de un grupo de {animal} que están {accion} en su {lugar}. Creado por midjourney'
     guardarImagen(creacionDeImagen(mjeDelPrompt),nombre)
     if diaDeHoy() == 'Viernes':
-        # funcionViernes(mensajedeldia, 'viernes','Friday','shrek')
-        funcionDiaria(mjeDelPrompt,nombre,animal,lugarSinEspacio)
+        funcionViernes(mensajedeldia, 'viernes','Friday','shrek')
     else:
-        funcionDiaria(mjeDelPrompt,nombre,animal)
+        funcionDiaria(mjeDelPrompt,nombre,animal,lugarSinEspacio)
